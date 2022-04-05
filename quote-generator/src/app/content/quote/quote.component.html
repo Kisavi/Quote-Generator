@@ -1,1 +1,20 @@
-<p>quote works!</p>
+<!-- <ul>
+<li *ngFor="let quote of quotes">
+    {{quote.name}}
+ <app-quote-item [quote]="quote"></app-quote-item> 
+</li>
+</ul> -->
+<div class="quote-container">
+  <h1 class="random-heading">Generated quotes</h1>
+  <div class="container random">
+    <div *ngFor="let quote of quotes" class="card" style="width: 22rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{ quote.name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ quote.day}}</h6>
+        <p class="card-text">"{{ quote.description }}"</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+  </div>
+</div>
