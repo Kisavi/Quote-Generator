@@ -1,0 +1,5 @@
+.bimage {
+    background: url(../assets/bimg.jpg);
+    background-size: cover;
+    background-position: center center;
+}

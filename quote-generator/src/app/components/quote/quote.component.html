@@ -1,0 +1,33 @@
+<!-- <ul>
+<li *ngFor="let quote of quotes">
+    {{quote.name}}
+ <app-quote-item [quote]="quote"></app-quote-item> 
+</li>
+</ul> -->
+<div class="quote-container">
+  <div class="container">
+    <div class="row">
+      <!-- <h1 class="random-heading">Generated quotes</h1> -->
+      <div class="random col-md-6">
+        <h3 class="random-heading">Generated quotes</h3>
+        <div *ngFor="let quote of quotes;let i = index" class="card mb-4" style="width: 27rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{ quote.category}}</h5>
+            <hr>
+            <p class="card-text">"{{ quote.description }}"</p>
+
+            <!-- this information below is to be togglled -->
+            <h6 class="card-title">Author: {{ quote.author}}</h6>
+            <p class="card-text">Submitted by {{ quote.submitter }}</p>
+            <p class="card-text">Time passed since the quote was submitted</p>
+            <app-quote-item (isComplete)="completeQuote($event,i)"></app-quote-item>
+          </div>
+        </div>
+      </div>
+      <div class="quote-form col-md-6">
+        <h3>Post a Quote</h3>
+        <app-quote-form></app-quote-form>
+      </div>
+    </div>
+  </div>
+</div>

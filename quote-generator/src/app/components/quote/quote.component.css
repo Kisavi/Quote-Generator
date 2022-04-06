@@ -1,0 +1,15 @@
+.quote-container {
+    /* margin-top: 7em; */
+    padding-top: 7em;
+}
+
+.card {
+    background: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(30, 30, 30, 0.2);
+    color: white;
+}
+
+.card-text {
+    font-style: italic;
+}
