@@ -7,13 +7,14 @@
 <div class="quote-container">
   <h1 class="random-heading">Generated quotes</h1>
   <div class="container random">
-    <div *ngFor="let quote of quotes" class="card" style="width: 22rem;">
+    <div *ngFor="let quote of quotes;let i = index" class="card" style="width: 22rem;">
       <div class="card-body">
         <h5 class="card-title">{{ quote.name}}</h5>
         <h6 class="card-subtitle mb-2 text-muted">{{ quote.day}}</h6>
         <p class="card-text">"{{ quote.description }}"</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+
+        <!-- <button (click)= 'quoteComplete(true)' (isComplete)="completeQuote($event,i)" type="button" class="btn btn-danger">Delete Quote</button> -->
+        <app-quote-item (isComplete)="completeQuote($event,i)"></app-quote-item>
       </div>
     </div>
   </div>
