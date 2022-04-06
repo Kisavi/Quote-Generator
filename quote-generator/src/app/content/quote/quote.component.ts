@@ -10,11 +10,11 @@ export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
     // new Quote (1, 'Peter Ouma', 'Monday', 'Never give up'),
-    // new Quote (2, 'Peter Ouma', new Date(2022,4,5), 'Never give up'),
+    // new Quote (2, 'Peter Ouma', new Date(2022,4,15), 'Never give up'),
     // new Quote (3, 'Peter Ouma', new Date(2022,4,5), 'Never give up'),
-    {id: 1, name: 'Uhuru Kinyasa', day: 'Monday', description: 'Fellow Kenyans...'},
-    {id: 2, name: 'Niwai Kibangi', day: 'Friday',description: 'Mafi ya kuku...'},
-    {id: 3, name: 'Magix Njenga', day: 'Sunday',description: 'Magix Njenga on the beat...'},
+    {id: 1, name: 'Uhuru Kinyasa',  description: 'Fellow Kenyans...', creationDate: new Date(2022,0,1)},
+    {id: 2, name: 'Niwai Kibangi', description: 'Mafi ya kuku...', creationDate: new Date(2022,1,3)},
+    {id: 3, name: 'Magix Njenga', description: 'Magix Njenga on the beat...', creationDate: new Date(2022,2,15)},
   ]
 
   completeQuote(isComplete:any, index:any) {
