@@ -1,23 +1,36 @@
-<form>
+<form #quoteForm='ngForm'>
   <div class="mb-3">
     <label for="category" class="form-label">Quote Category</label>
-    <input type="text" class="form-control" id="category" [(ngModel)]="newQuote.category" category="category" aria-describedby="emailHelp">
+    <input type="text" class="form-control" placeholder="Eg...Motivational, Emotional, Encouragement" id="category" [(ngModel)]="newQuote.category" name="category" #category='ngModel' required>
+    <div [hidden]="category.valid || category.pristine" class="alert alert-danger">
+      <p>Category is required</p>
+    </div>
   </div>
   <div class="mb-3">
     <label for="description" class="form-label">Quote</label>
-    <textarea class="form-control" id="description" [(ngModel)]="newQuote.description" description="description" rows="3" required></textarea>
+    <textarea class="form-control" id="description" [(ngModel)]="newQuote.description" name="description"
+      #description="ngModel" rows="3" required></textarea>
+      <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+        <p>Author is required</p>
+      </div>
   </div>
+
   <div class="mb-3">
     <label for="author" class="form-label">Quote Author's Name</label>
-    <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" author="author">
+    <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel"
+      required>
+    <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+      <p>Author is required</p>
+    </div>
   </div>
+
   <div class="mb-3">
-    <label for="submitter" class="form-label">Your Name</label>
-    <input type="text" class="form-control" id="submitter" [(ngModel)]="newQuote.submitter" submitter="submitter">
+    <label for="submitter" class="form-label">Your name</label>
+    <input type="text" class="form-control" id="submitter" [(ngModel)]="newQuote.submitter" name="submitter" #submitter="ngModel"
+      required>
+    <div [hidden]="submitter.valid || submitter.pristine" class="alert alert-danger">
+      <p>Your name is required</p>
+    </div>
   </div>
-  <!-- <div class="mb-4">
-    <label for="complete" class="form-label">Submition Date</label>
-    <input type="date" class="form-control" id="complete" required>
-  </div> -->
   <button type="submit" class="btn btn-success">Add New Quote</button>
 </form>
