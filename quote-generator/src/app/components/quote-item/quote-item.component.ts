@@ -11,6 +11,13 @@ export class QuoteItemComponent implements OnInit {
   @Input() 'quote': Quote;
   @Output() isComplete = new EventEmitter<boolean>();
 
+  quoteDownVote() {
+    this.quote.downVote -=1;
+  }
+
+  quoteUpVote() {
+    this.quote.upVote +=1;
+  }
 
   constructor() { }
 

@@ -12,12 +12,12 @@ upvote -->
 
   <div class="votes mb-3">
     <div class="upvote">
-      <button type="button" class="btn btn-secondary">Upvote</button>
-      <p>2</p>
+      <button (click)="quoteUpVote()" type="button" class="btn btn-secondary">Upvote</button>
+      <p>{{ quote.upVote }}</p>
     </div>
     <div class="downvote">
-      <button type="button" class="btn btn-secondary">Downvote</button>
-      <p>0</p>
+      <button (click)="quoteDownVote()" type="button" class="btn btn-secondary">Downvote</button>
+      <p>{{quote.downVote}}</p>
     </div>
   </div>
   <!-- <button (click)='quoteComplete(true)' type="button" class="btn btn-danger">Delete Quote</button> -->

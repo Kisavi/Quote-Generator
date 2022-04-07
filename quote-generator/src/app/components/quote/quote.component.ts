@@ -9,9 +9,9 @@ import { Quote } from '../../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote(1, 'Motivational Quote', 'Fellow Kenyans...', 'Uhuru Kinyasa', 'Chaggy Jan'),
-    new Quote(1, 'Emotional Quote', 'Mafi ya kuku...', 'Niwai Kibangi', 'Hakika Wema'),
-    new Quote(1, 'Happy Quote', 'Magix Njenga on the beat...', 'Magix Njenga', 'Fadhili Adili'),
+    new Quote(1, 'Motivational Quote', 'Fellow Kenyans...', 'Uhuru Kinyasa', 'Chaggy Jan', 0, 0),
+    new Quote(1, 'Emotional Quote', 'Mafi ya kuku...', 'Niwai Kibangi', 'Hakika Wema', 0, 0),
+    new Quote(1, 'Happy Quote', 'Magix Njenga on the beat...', 'Magix Njenga', 'Fadhili Adili', 0, 0),
    
     // {id: 3, category: 'Happy Quote', description: 'Magix Njenga on the beat...', author: 'Magix Njenga', submitter: 'Fadhili Adili'},
   ]
