@@ -1,4 +1,4 @@
-<form #quoteForm='ngForm'>
+<form (ngSubmit)="submitQuote()" #quoteForm='ngForm'>
   <div class="mb-3">
     <label for="category" class="form-label">Quote Category</label>
     <input type="text" class="form-control" placeholder="Eg...Motivational, Emotional, Encouragement" id="category" [(ngModel)]="newQuote.category" name="category" #category='ngModel' required>

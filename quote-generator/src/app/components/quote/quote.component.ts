@@ -33,6 +33,11 @@ export class QuoteComponent implements OnInit {
   //   }
   // }
 
+  addNewQuote(quote:any) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    this.quotes.unshift(quote)
+  }
 
   deletQuote(index:any) {
     this.quotes.splice(index,1)
