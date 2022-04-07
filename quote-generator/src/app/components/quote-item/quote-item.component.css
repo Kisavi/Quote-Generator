@@ -1,0 +1,9 @@
+.votes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.downvote p, .upvote p{
+text-align: center;
+}

@@ -9,20 +9,38 @@ import { Quote } from '../../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    //  new Quotes (1, 'Peter Ouma', 'Monday', 'Never give up'),
-    // new Quotes (2, 'Peter Ouma', new Date(2022,4,15), 'Never give up'),
-    // new Quote (3, 'Peter Ouma', new Date(2022,4,5), 'Never give up'),
-    {id: 1, category: 'Motivational Quote', description: 'Fellow Kenyans...', author: 'Uhuru Kinyasa', submitter: 'Chaggy Jan'},
-    {id: 2, category: 'Emotional Quote', description: 'Mafi ya kuku...', author: 'Niwai Kibangi', submitter: 'Hakika Wema'},
-    {id: 3, category: 'Happy Quote', description: 'Magix Njenga on the beat...', author: 'Magix Njenga', submitter: 'Fadhili Adili'},
+    new Quote(1, 'Motivational Quote', 'Fellow Kenyans...', 'Uhuru Kinyasa', 'Chaggy Jan'),
+    new Quote(1, 'Emotional Quote', 'Mafi ya kuku...', 'Niwai Kibangi', 'Hakika Wema'),
+    new Quote(1, 'Happy Quote', 'Magix Njenga on the beat...', 'Magix Njenga', 'Fadhili Adili'),
+   
+    // {id: 3, category: 'Happy Quote', description: 'Magix Njenga on the beat...', author: 'Magix Njenga', submitter: 'Fadhili Adili'},
   ]
 
-  completeQuote(isComplete:any, index:any) {
-    if(isComplete) {
-      this.quotes.splice(index,1)
-    }
+  // deleteQuote(isComplete:any, index:any) {
+  //   if (isComplete) {
+  //     let toDelete = confirm(`Are you sure you want to delete this ${this.quotes[index].category}?`) 
+
+  //     if (toDelete) {
+  //       this.quotes.splice(index,1)
+  //     }
+  //   }
+  // }
+ 
+
+  // completeQuote(isComplete:any, index:any) {
+  //   if(isComplete) {
+  //     this.quotes.splice(index,1)
+  //   }
+  // }
+
+
+  deletQuote(index:any) {
+    this.quotes.splice(index,1)
   }
 
+  toggleDetails(index:any){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
 
   constructor() { }
 

@@ -13,3 +13,9 @@
 .card-text {
     font-style: italic;
 }
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

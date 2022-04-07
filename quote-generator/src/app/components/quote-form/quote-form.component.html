@@ -1,23 +1,23 @@
 <form>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Quote Category</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <label for="category" class="form-label">Quote Category</label>
+    <input type="text" class="form-control" id="category" [(ngModel)]="newQuote.category" category="category" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
     <label for="description" class="form-label">Quote</label>
-    <textarea class="form-control" id="description" rows="3" required></textarea>
+    <textarea class="form-control" id="description" [(ngModel)]="newQuote.description" description="description" rows="3" required></textarea>
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Quote Author's Name</label>
-    <input type="text" class="form-control" id="exampleInputPassword1">
+    <label for="author" class="form-label">Quote Author's Name</label>
+    <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" author="author">
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Your Name</label>
-    <input type="text" class="form-control" id="exampleInputPassword1">
+    <label for="submitter" class="form-label">Your Name</label>
+    <input type="text" class="form-control" id="submitter" [(ngModel)]="newQuote.submitter" submitter="submitter">
   </div>
-  <div class="mb-4">
+  <!-- <div class="mb-4">
     <label for="complete" class="form-label">Submition Date</label>
     <input type="date" class="form-control" id="complete" required>
-  </div>
-  <button type="submit" class="btn btn-primary">Add New Quote</button>
+  </div> -->
+  <button type="submit" class="btn btn-success">Add New Quote</button>
 </form>
