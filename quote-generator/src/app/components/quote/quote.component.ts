@@ -9,11 +9,9 @@ import { Quote } from '../../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote(1, 'Motivational Quote', 'Fellow Kenyans...', 'Uhuru Kinyasa', 'Chaggy Jan', new Date(2022,3,1), 0, 0),
-    new Quote(1, 'Emotional Quote', 'Mafi ya kuku...', 'Niwai Kibangi', 'Hakika Wema', new Date(2022,3,6), 0, 0),
-    new Quote(1, 'Happy Quote', 'Magix Njenga on the beat...', 'Magix Njenga', 'Fadhili Adili', new Date(2022,2,28), 0, 0),
-   
-    // {id: 3, category: 'Happy Quote', description: 'Magix Njenga on the beat...', author: 'Magix Njenga', submitter: 'Fadhili Adili'},
+    new Quote(1, 'Disastrous Quote', 'Sasa Mnataka nifanye nini Jameni...', 'Uhuru Kinyasa', 'Ali Baba', new Date(2022,3,1), 0, 0),
+    new Quote(1, 'Expressional Quote', 'Mtu kama huyo ni bure kabisaa! Ooh yes!', 'Niwai Kibangi', 'Chaggy Chan', new Date(2022,3,6), 0, 0),
+    new Quote(1, 'Happy Quote', 'Ukiwa na wakando hutaki kapicha, ukuwa na wako manze unachachisha...', 'The Other Delo', 'Magix Njenga', new Date(2022,2,28), 0, 0),
   ]
 
   // deleteQuote(isComplete:any, index:any) {

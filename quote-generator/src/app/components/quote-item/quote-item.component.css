@@ -1,3 +1,14 @@
+
+.quoteText {
+    font-weight: 500;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+span {
+    font-style: italic;
+}
+
 .votes {
     display: flex;
     align-items: center;
@@ -6,4 +17,25 @@
 
 .downvote p, .upvote p{
 text-align: center;
+}
+
+.downvote p {
+    color: black;
+}
+
+.upvote, .downvote, .upvotebtn, .downvotebtn {
+    font-size: 0.9em;
+    font-weight: 900;
+    border: none !important;
+    outline: none !important;
+}
+
+.upvotebtn:focus {
+background: green;
+outline: none !important;
+border: none !important;
+}
+
+.downvotebtn:focus {
+    background: red;
 }

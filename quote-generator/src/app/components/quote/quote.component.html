@@ -1,13 +1,7 @@
-<!-- <ul>
-<li *ngFor="let quote of quotes">
-    {{quote.name}}
- <app-quote-item [quote]="quote"></app-quote-item> 
-</li>
-</ul> -->
+
 <div class="quote-container">
   <div class="container">
     <div class="row">
-      <!-- <h1 class="random-heading">Generated quotes</h1> -->
       <div class="random col-md-6">
         <h3 class="random-heading">Generated quotes</h3>
         <div *ngFor="let quote of quotes;let i = index" class="card mb-4" style="width: 27rem;">
@@ -15,8 +9,8 @@
             <h5 class="card-title">{{ quote.category}}</h5>
             <hr>
             <div class="buttons">
-            <button (click)="toggleDetails(i)" type="button" class="btn btn-dark">See quote</button>
-            <button (click)="deletQuote(i)" type="button" class="btn btn-danger">Delete quote</button>
+            <button (click)="toggleDetails(i)" type="button" class="btn btn-dark mb-4">See quote</button>
+            <button (click)="deletQuote(i)" type="button" class="btn btn-danger mb-4">Delete quote</button>
             </div>
             <!-- <button (click)="deleteQuote(i,1)" type="button" class="btn btn-dark">d quote</button> -->
             <!-- <button (click)='quoteComplete(true)' type="button" class="btn btn-danger">Delete Quote</button> -->

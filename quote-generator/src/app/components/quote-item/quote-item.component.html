@@ -1,26 +1,21 @@
-<!-- quote author
-submitter
-date
-upvote -->
-<!-- <p>{{quote.submitter}}</p> -->
+
 <!-- this information below is to be togglled -->
 <div>
-  <p class="card-text">"{{ quote.description }}"</p>
-  <h6 class="card-title">Author: {{ quote.author}}</h6>
-  <p class="card-text">Submitted by {{ quote.submitter }}</p>
-  <p class="card-text">This quote was created {{ quote.uploadDate | dateCount }} ago.</p>
+  <p class="card-text quoteText">"{{ quote.description }}"</p>
+  <h6 class="card-text">Author: <span>{{ quote.author}}</span></h6>
+  <h6 class="card-text">Submitted by:<span>{{ quote.submitter }}</span></h6>
+  <p class="card-text">Submitted {{ quote.uploadDate | dateCount }} ago.</p>
 
-  <div class="votes mb-3">
+  <div class="votes">
     <div class="upvote">
-      <button (click)="quoteUpVote()" type="button" class="btn btn-secondary">Upvote</button>
+      <button (click)="quoteUpVote()" type="button" class="btn upvotebtn btn-secondary">Upvote</button>
       <p>{{ quote.upVote }}</p>
     </div>
     <div class="downvote">
-      <button (click)="quoteDownVote()" type="button" class="btn btn-secondary">Downvote</button>
+      <button (click)="quoteDownVote()" type="button" class="btn downvotebtn btn-secondary">Downvote</button>
       <p>{{quote.downVote}}</p>
     </div>
   </div>
   <!-- <button (click)='quoteComplete(true)' type="button" class="btn btn-danger">Delete Quote</button> -->
 </div>
-<!-- <p>welcome</p> -->
-<!-- <p>{{quote.description}}</p> -->
+

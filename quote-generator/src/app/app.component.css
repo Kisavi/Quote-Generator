@@ -1,5 +1,3 @@
 .bimage {
-    background: url(../assets/bimg.jpg);
-    background-size: cover;
-    background-position: center center;
+    background: linear-gradient(#2C3E50,#fd746c, #2C3E50);
 }

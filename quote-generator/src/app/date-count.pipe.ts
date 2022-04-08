@@ -16,17 +16,17 @@ export class DateCountPipe implements PipeTransform {
       dateCounter += days + "days ";
     }
     //number of hours
-    var hours = Math.floor(difference / 3600) % 24;
+    var hours = Math.floor(difference / 3600) % 24; //convert seconds to hours and return number of hours left to make a day
     if (hours > 0) {
       dateCounter += hours + "hrs ";
     }
     //number of minutes
-    var minutes = Math.floor(difference / 60) % 60;
+    var minutes = Math.floor(difference / 60) % 60; //convert seconds to minutes and return number of minutes left to make an hour
     if (minutes > 0) {
       dateCounter += minutes + "mins ";
     }
     //number of seconds
-    var seconds = Math.floor(difference % 60);
+    var seconds = Math.floor(difference % 60); //return number of seconds left to make a minute
     if (seconds > 0) {
       dateCounter += seconds + "secs";
     }

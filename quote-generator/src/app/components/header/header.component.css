@@ -14,6 +14,7 @@
 }
 
 .nav-item:hover a {
-    background: #d3ad88;
+    background: #836344;
+    color: rgb(222, 222, 222);
     border-radius: 0.3em;
 }
