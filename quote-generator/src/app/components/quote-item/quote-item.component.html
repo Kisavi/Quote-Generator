@@ -8,7 +8,7 @@ upvote -->
   <p class="card-text">"{{ quote.description }}"</p>
   <h6 class="card-title">Author: {{ quote.author}}</h6>
   <p class="card-text">Submitted by {{ quote.submitter }}</p>
-  <p class="card-text">Time passed since the quote was submitted</p>
+  <p class="card-text">This quote was created {{ quote.uploadDate | dateCount }} ago.</p>
 
   <div class="votes mb-3">
     <div class="upvote">

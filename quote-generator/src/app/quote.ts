@@ -4,9 +4,4 @@ export class Quote {
         this.showDescription = false;
   }
 
-  // id!: number;
-//     // category!: string;
-//     // description!: string;
-//     // author!: string;
-//     // submitter!: string;
 }
