@@ -2,7 +2,7 @@
 <div class="quote-container">
   <div class="container">
     <div class="row">
-      <div class="random col-md-6">
+      <div class="random col-lg-6">
         <h3 class="random-heading">Generated quotes</h3>
         <div *ngFor="let quote of quotes;let i = index" class="card mb-4" style="width: 27rem;">
           <div class="card-body">
@@ -11,16 +11,13 @@
             <div class="buttons">
             <button (click)="toggleDetails(i)" type="button" class="btn btn-dark mb-4">See quote</button>
             <button (click)="deletQuote(i)" type="button" class="btn btn-danger mb-4">Delete quote</button>
-            <!-- <button (click)="alerting()" type="button" class="btn btn-danger mb-4">Delete quote</button> -->
             </div>
-            <!-- <button (click)="deleteQuote(i,1)" type="button" class="btn btn-dark">d quote</button> -->
-            <!-- <button (click)='quoteComplete(true)' type="button" class="btn btn-danger">Delete Quote</button> -->
             <app-quote-item *ngIf="quote.showDescription" [quote]="quote">
             </app-quote-item>
           </div>
         </div>
       </div>
-      <div class="quote-form col-md-6">
+      <div class="quote-form col-lg-6">
         <h3 class="random-heading">Post a Quote</h3>
         <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
       </div>

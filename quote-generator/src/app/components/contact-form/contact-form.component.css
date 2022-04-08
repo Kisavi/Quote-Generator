@@ -1,0 +1,28 @@
+.feedback {
+    height: 100vh;
+    width: 100vw;
+   background: url("../../../assets/abc.jpg");
+   background-position: center center;
+   background-size: cover;
+}
+
+.feedbackForm {
+    padding-top: 2em;
+}
+
+.feedback-form {
+    padding: 2rem 4rem;
+    border: 1px solid black;
+    border-radius: 0.3em;
+    background: #fff;
+    margin: 0 13rem;
+    margin-top: 7rem;
+}
+
+.feedbackForm h3,
+h6 {
+    text-align: center;
+    font-weight: 700;
+    font-size: large;
+    text-decoration: underline;
+}

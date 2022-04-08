@@ -1,0 +1,26 @@
+<div id="contact" class="feedback">
+  <div class="container feedbackForm">
+        <form #contactForm="ngForm">
+          <div class="feedback-form">
+            <h6 class="mb-5">Share any messeage or feedback you have with us.</h6>
+            <div class="mb-3">
+              <label for="userEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" #userEmail =""
+                required>
+                <!-- <div [hidden]="userEmail.valid || userEmail.pristine" class="alert alert-danger">
+                  <p>Your name is required</p>
+                </div> -->
+            </div>
+            <div class="mb-4">
+              <label for="userMessage" class="form-label">Message</label>
+              <textarea class="form-control" id="userMessage" rows="6" placeholder="Your message..." #userMessage= ""
+                required></textarea>
+                <!-- <div [hidden]="userMessage.valid || userMessage.pristine" class="alert alert-danger">
+                  <p>Your name is required</p>
+                </div> -->
+            </div>
+            <button type="button" (click)="receive()" class="btn btn-dark">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
