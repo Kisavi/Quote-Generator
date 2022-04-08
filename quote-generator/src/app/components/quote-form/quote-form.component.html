@@ -32,5 +32,5 @@
       <p>Your name is required</p>
     </div>
   </div>
-  <button type="submit" class="btn btn-success">Add New Quote</button>
+  <button type="submit" class="btn btn-success" [disabled]="!quoteForm.form.valid">Add New Quote</button>
 </form>

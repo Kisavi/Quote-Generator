@@ -5,6 +5,10 @@
 .navbar-brand {
     font-weight: 900;
     font-size: 1.7em;
+    color: #000;
+}
+
+.navbar-brand:hover {
     color: #836344;
 }
 
@@ -14,7 +18,6 @@
 }
 
 .nav-item:hover a {
-    background: #836344;
-    color: rgb(222, 222, 222);
+    background: #fff;
     border-radius: 0.3em;
 }
