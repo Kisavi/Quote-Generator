@@ -23,7 +23,7 @@ export class QuoteComponent implements OnInit {
  
   //function to delete quote when delete button is pressed
   deletQuote(index: any) {
-    let result = confirm(`Are you sure you want to delete this ${this.quotes[index].category}?`)
+    let result = confirm(`Are you sure you want to delete this quote by ${this.quotes[index].author}?`)
     if (result) {
       this.quotes.splice(index, 1)
     }
