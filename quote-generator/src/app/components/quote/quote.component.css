@@ -1,20 +1,31 @@
 .quote-container {
-    padding-top: 7em;
+  padding-top: 7em;
 }
 
 .random-heading {
-    color: white;
+  color: white;
 }
 
 .card {
-    background: rgba(225, 225, 225, 0.2);
-    backdrop-filter: blur(2px);
-    border: 1px solid rgba(30, 30, 30, 0.2);
-    color: white;
+  background: rgba(225, 225, 225, 0.2);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(30, 30, 30, 0.2);
+  color: white;
 }
 
 .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.highlight {
+    background: rgba(225, 225, 225, 0.2);
+    border-radius: 0.6em;
+    box-shadow: inset 6px 6px 6px #474748, inset -6px -6px 6px rgba(225, 225, 225, 0.2);
+
+}
+
+.highlighted {
+  padding: 0.8em;
 }
